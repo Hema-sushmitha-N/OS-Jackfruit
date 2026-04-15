@@ -77,6 +77,7 @@ dmesg | tail
 
 ### Screenshot 1 — Multi-Container Supervision
 Two containers (alpha, beta) running simultaneously under one supervisor process.
+
 ![Multi-Container Supervision](https://github.com/user-attachments/assets/114c18bc-6632-4c34-8ab4-51465fe9ed5b)
 
 
@@ -91,7 +92,7 @@ Two containers (alpha, beta) running simultaneously under one supervisor process
 ### Screenshot 2 — Metadata Tracking
 Output of `ps` command showing container ID, PID, state, start time, soft and hard memory limits.
 
-<!-- Add screenshot here -->
+![Output](https://github.com/user-attachments/assets/e41ed27b-9131-4165-b4c5-3af952509fa0)
 
 ---
 
@@ -101,42 +102,51 @@ Container output captured through the logging pipeline:
 
 `engine logs alpha` retrieves the captured output.
 
-<!-- Add screenshot here -->
+![Output](https://github.com/user-attachments/assets/d387ef60-393e-4006-a673-7d0932a8a901)
+
+![Output](https://github.com/user-attachments/assets/14931149-5f87-45ad-90fb-e06dd86267b2)
 
 ---
 
 ### Screenshot 4 — CLI and IPC
 CLI commands (`start`, `stop`, `ps`) sent to the supervisor over a UNIX domain socket at `/tmp/engine.sock`. Supervisor responds correctly to each command.
 
-<!-- Add screenshots here -->
+![Output](https://github.com/user-attachments/assets/525b133d-784e-4d73-b5d9-6a2e7031eda7)
+
+![Output](https://github.com/user-attachments/assets/7b0ac018-1b2d-4653-9ee8-47f665ad6ce7)
+
 
 ---
 
 ### Screenshot 5 — Soft-Limit Warning
 `dmesg` output showing a soft-limit warning event when a container's RSS memory exceeds the configured soft threshold.
 
-<!-- Add screenshot here -->
+![Output](https://github.com/user-attachments/assets/2fdd0dcf-c951-4f83-a058-70bb4c0250db)
 
 ---
 
 ### Screenshot 6 — Hard-Limit Enforcement
 `dmesg` output showing a container being killed after exceeding its hard memory limit. Supervisor metadata reflects the kill by updating container state to `killed`.
 
-<!-- Add screenshot here -->
+![Output](https://github.com/user-attachments/assets/6e5ac47d-2757-4c8b-827b-59125163eb97)
+
 
 ---
 
 ### Screenshot 7 — Scheduling Experiment
 Terminal output from scheduling experiments comparing CPU-bound and I/O-bound workloads under different priorities. Observable differences in completion time and CPU share are shown.
 
-<!-- Add screenshot here -->
+![Output](https://github.com/user-attachments/assets/bfcc6f05-c2ef-4427-96e4-e1882e9d31f2)
+
 
 ---
 
 ### Screenshot 8 — Clean Teardown
 Evidence that all containers are reaped, logging threads exit cleanly, and no zombie processes remain after supervisor shutdown — shown via `ps aux` output and supervisor exit messages.
 
-<!-- Add screenshot here -->
+![Output](https://github.com/user-attachments/assets/f187318e-fefc-446e-9f18-6d18c6f48948)
+
+![Output](https://github.com/user-attachments/assets/cee540ea-fa1e-4c50-97e8-43ec014996b2)
 
 ---
 
