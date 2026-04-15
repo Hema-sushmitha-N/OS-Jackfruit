@@ -81,6 +81,11 @@ Two containers (alpha, beta) running simultaneously under one supervisor process
 
 
 
+![Output](https://github.com/user-attachments/assets/9c236082-3a5d-4e88-a0b0-7a9605caf01b)
+
+
+
+
 ---
 
 ### Screenshot 2 — Metadata Tracking
