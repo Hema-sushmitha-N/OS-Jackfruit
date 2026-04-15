@@ -8,8 +8,8 @@
 
 | Name | SRN |
 |------|-----|
-|  |  |
-|  |  |
+| HEMA SUSHMITHA N | PES1UG24CS667 |
+| GANAVI S | PES1UG24CS707|
 
 ---
 
@@ -77,8 +77,9 @@ dmesg | tail
 
 ### Screenshot 1 — Multi-Container Supervision
 Two containers (alpha, beta) running simultaneously under one supervisor process.
+![Multi-Container Supervision](https://github.com/user-attachments/assets/114c18bc-6632-4c34-8ab4-51465fe9ed5b)
 
-<!-- Add screenshots here -->
+
 
 ---
 
